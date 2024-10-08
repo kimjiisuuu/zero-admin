@@ -22,7 +22,18 @@
                     <!-- 여기에 notice 페이지의 고유한 내용을 넣습니다 -->
                 </div>
             </main>
-          <footer id="footer"></footer>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -31,7 +42,6 @@
         $(function() {
             $("#header").load("header.html nav.sb-topnav");
             $("#layoutSidenav_nav").load("header.html #layoutSidenav_nav > *");
-            $("#footer").load("footer.html");
         });
     </script>
 </body>
